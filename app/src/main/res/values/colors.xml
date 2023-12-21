@@ -13,4 +13,6 @@
     <color name="primaryVariant">#E70407</color>
     <color name="secondary">#F70000</color>
     <color name="background">#171417</color>
+    <color name="menu_navigation">@color/white</color>
+
 </resources>
