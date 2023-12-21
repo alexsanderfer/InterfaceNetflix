@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InterfaceNetflix" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Brand Color -->
+         <item name="colorPrimary">@color/primary</item>
+         <item name="colorPrimaryVariant">@color/primaryVariant</item>
+         <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Brand Color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status Bar Color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Custom Netflix Interface -->
+        <item name="android:windowBackground">@color/background</item>
+
+    </style>
+
+</resources>
