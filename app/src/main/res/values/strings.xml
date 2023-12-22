@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Interface Netflix</string>
+    <string name="tv_shows">Séries</string>
+    <string name="movies">Filmes</string>
+    <string name="my_list">Minha lista</string>
+    <string name="violence">Violência</string>
+    <string name="empolgante">Empolgante</string>
+    <string name="sinistro">Sinistro</string>
 </resources>

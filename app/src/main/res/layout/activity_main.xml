@@ -7,47 +7,111 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_netflix_logo"
         android:layout_width="43dp"
         android:layout_height="60dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="25dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
-        android:textColor="@color/menu_navigation"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_serie"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_serie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:text="@string/tv_shows"
         android:textColor="@color/menu_navigation"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="@+id/image_netflix_logo"
+        app:layout_constraintEnd_toStartOf="@+id/text_filme"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/image_netflix_logo"
+        app:layout_constraintTop_toTopOf="@+id/image_netflix_logo" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text_filme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:text="@string/movies"
         android:textColor="@color/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="@+id/text_serie"
+        app:layout_constraintEnd_toStartOf="@+id/text_myList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_serie"
+        app:layout_constraintTop_toTopOf="@+id/text_serie" />
+
+    <TextView
+        android:id="@+id/text_myList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_list"
+        android:textColor="@color/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="@+id/text_filme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/text_filme"
+        app:layout_constraintTop_toTopOf="@+id/text_filme" />
+
+    <ImageView
+        android:id="@+id/image_peakyBlinders_logo"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/logo_peaky" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/text_violencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/violence"
+        android:textColor="@color/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="@+id/text_empolgante"
+        app:layout_constraintEnd_toStartOf="@+id/text_empolgante"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_empolgante" />
+
+    <TextView
+        android:id="@+id/text_empolgante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/empolgante"
+        android:textColor="@color/menu_navigation"
+        app:layout_constraintEnd_toStartOf="@+id/text_sinistro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_violencia"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/text_sinistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sinistro"
+        android:textColor="@color/menu_navigation"
+        app:layout_constraintBottom_toBottomOf="@+id/text_empolgante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_empolgante"
+        app:layout_constraintTop_toTopOf="@+id/text_empolgante" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
