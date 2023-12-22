@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2023. Created by alexsander at 12/22. All rights reserved.
+ * GitHub: https://github.com/alexsanderfer/
+ * Portfolio: https://alexsanderfer.netlify.app/
+ */
+
 package com.alexsanderdev.interfacenetflix;
 
 import android.content.Context;
